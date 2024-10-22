@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The House Burger & Chicken</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFDE59;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FFDE59;
+            color: white;
+            text-align: center;
+            padding: 4em 0;
+            position: relative;
+        }
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1 {
+            position: relative;
+            z-index: 2;
+            font-size: 3em;
+            margin: 0;
+        }
+        header img {
+            max-width: 150px;
+            position: relative;
+            z-index: 2;
+        }
+        nav {
+            background-color: #FFA500;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .menu-section, .testimonials-section, .contact-info {
+            margin: 2em 0;
+            text-align: center;
+        }
+        .menu-section h2, .testimonials-section h2 {
+            color: #FFA500;
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+        .menu-item {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 1em 0;
+            padding: 1em;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-item img {
+            max-width: 100px;
+            border-radius: 8px;
+        }
+        .menu-item div {
+            flex: 1;
+            margin-left: 1em;
+        }
+        .menu-item span {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .footer {
+            background-color: #FFA500;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+        .contact-info {
+            margin-top: 1em;
+            text-align: center;
+        }
+        button {
+            background-color: #FFA500;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 1em;
+        }
+        button:hover {
+            background-color: #cc8400;
+        }
+        .testimonials {
+            margin: 1em 0;
+            padding: 1em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-input {
+            margin: 1em 0;
+            width: 80%;
+            padding: 0.5em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <img src="https://i.pinimg.com/736x/6c/64/09/6c640991d6aad9079282c5b108d5790a.jpg" alt="The House Burger & Chicken">
+        <h1>The House Burger & Chicken</h1>
+    </header>
+    <nav>
+        <a href="#menu">Menú</a>
+        <a href="#testimonials">Testimonios</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="menu" class="menu-section">
+            <h2>Nuestro Menú</h2>
+            <p>En The House Burger & Chicken, ofrecemos una variedad de deliciosas hamburguesas y platos de pollo que satisfacen todos los gustos. Nuestros ingredientes son frescos y de alta calidad, garantizando un sabor inigualable en cada bocado.</p>
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/564x/1e/5a/5c/1e5a5c5274ead23a6e0594d3fea213f8.jpg" alt="Hamburguesa Simple">
+                <div>
+                    <span>Hamburguesa Simple - 15 BS</span>
+                    <p>Tomate, lechuga, mortadela y una porción de papas.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/564x/05/d9/85/05d985100d00e314683f90fda32babac.jpg" alt="Hamburguesa Doble">
+                <div>
+                    <span>Hamburguesa Doble - 20 BS</span>
+                    <p>Doble carne, tomate, lechuga, mortadela y una porción de papas.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/enabled/236x/86/33/f2/8633f291fe3d274fe79a551e4ae3b704.jpg" alt="Hamburguesa Albañil">
+                <div>
+                    <span>Hamburguesa Albañil - 25 BS</span>
+                    <p>Doble carne, salchicha, huevo, doble queso y una porción de papas.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/564x/0f/a2/99/0fa299b2cba195192e8543a5603a7cd7.jpg" alt="Alitas a la Barbecue">
+                <div>
+                    <span>Alitas a la Barbecue - 20 BS</span>
+                    <p>Alitas bañadas con salsa de barbacoa y una porción de papas.</p>
+                </div>
+            </div>
+            <p>Ya sea que vengas solo o con amigos, cada visita es una experiencia memorable llena de sabores excepcionales. ¡Ven y prueba nuestros platos!</p>
+        </section>
+        <section id="testimonials" class="testimonials-section">
+            <h2>Testimonios</h2>
+            <p>Escuchar a nuestros clientes es muy importante para nosotros. Aquí te dejamos algunas opiniones sobre su experiencia en The House Burger & Chicken:</p>
+            <div class="testimonials">
+                <p><strong>Juan Pérez:</strong> "Las hamburguesas son las mejores que he probado, ¡definitivamente volveré!"</p>
+            </div>
+            <div class="testimonials">
+                <p><strong>María López:</strong> "Excelente servicio y comida deliciosa. ¡Recomendado!"</p>
+            </div>
+            <div class="testimonials">
+                <p><strong>Carlos García:</strong> "Ambiente acogedor y un menú variado. ¡Me encanta!"</p>
+            </div>
+        </section>
+        <section id="contact" class="contact-info">
+            <h2>Contacto</h2>
+            <p>Estamos aquí para ayudarte con tus pedidos. Puedes llamarnos o visitar nuestra ubicación:</p>
+            <p>Haz tu pedido al: <strong>67765869</strong></p>
+            <p>Ubicación: Radial 16, Capitán Higazy</p>
+            <button>Ordena Ahora</button>
+            <h3>Déjanos tu mensaje</h3>
+            <form>
+                <input type="text" class="form-input" placeholder="Tu nombre" required>
+                <input type="email" class="form-input" placeholder="Tu email" required>
+                <textarea class="form-input" placeholder="Tu mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+   <footer class="footer">
+ <p>© 2024 The house Burger & Chicken. Todos los derechos reservados.</p>
+ <p>Síguenos en nuestras redes sociales: <a href="https://www.instagram.com/house_burger_chicken" target="_blank" style="color: white;">Instagram </a>, 
+<a href="https://www.facebook.com/House Burger" target="_blank" style="color: white;">Facebook</a>
+ </p>
+ </footer> 
